@@ -3,9 +3,9 @@ using Webshop.Model.Models;
 
 namespace Webshop.Data
 {
-    public class WebShopDbContext : DbContext
+    public class WebshopDbContext : DbContext
     {
-        public WebShopDbContext() : base("WebshopDB")
+        public WebshopDbContext() : base("WebshopDB")
         {
             this.Configuration.LazyLoadingEnabled = false;
         }
@@ -25,9 +25,9 @@ namespace Webshop.Data
         public DbSet<Tag> Tags { get; set; }
 
         //Tạo phương thức tĩnh tạo mới dbcontext
-        public static WebShopDbContext Create()
+        public static WebshopDbContext Create()
         {
-            return new WebShopDbContext();
+            return new WebshopDbContext();
         }
 
         protected override void OnModelCreating(DbModelBuilder builder)

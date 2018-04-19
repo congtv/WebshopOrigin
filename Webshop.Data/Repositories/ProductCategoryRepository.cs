@@ -16,7 +16,6 @@ namespace WebShop.Data.Repositories
             : base(dbFactory)
         {
         }
-
         public IEnumerable<ProductCategory> GetByAlias(string alias)
         {
             return this.DbContext.ProductCategories.Where(x => x.Alias == alias);

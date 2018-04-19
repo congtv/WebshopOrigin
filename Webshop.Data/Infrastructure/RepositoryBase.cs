@@ -11,7 +11,7 @@ namespace WebShop.Data.Infrastructure
     {
         #region Properties
 
-        private WebShopDbContext dataContext;
+        private WebshopDbContext dataContext;
         private readonly IDbSet<T> dbSet;
 
         protected IDbFactory DbFactory
@@ -20,7 +20,7 @@ namespace WebShop.Data.Infrastructure
             private set;
         }
 
-        protected WebShopDbContext DbContext
+        protected WebshopDbContext DbContext
         {
             get { return dataContext ?? (dataContext = DbFactory.Init()); }
         }

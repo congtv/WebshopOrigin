@@ -4,11 +4,11 @@ namespace WebShop.Data.Infrastructure
 {
     public class DbFactory : Disposable, IDbFactory
     {
-        private WebShopDbContext dbContext;
+        private WebshopDbContext dbContext;
 
-        public WebShopDbContext Init()
+        public WebshopDbContext Init()
         {
-            return dbContext ?? (dbContext = new WebShopDbContext());
+            return dbContext ?? (dbContext = new WebshopDbContext());
         }
 
         protected override void DisposeCore()

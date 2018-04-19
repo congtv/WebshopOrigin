@@ -5,6 +5,6 @@ namespace WebShop.Data.Infrastructure
 {
     public interface IDbFactory : IDisposable
     {
-        WebShopDbContext Init();
+        WebshopDbContext Init();
     }
 }

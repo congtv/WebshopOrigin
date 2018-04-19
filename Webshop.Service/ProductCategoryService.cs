@@ -34,7 +34,6 @@ namespace WebShop.Service
             this._ProductCategoryRepository = ProductCategoryRepository;
             this._unitOfWork = unitOfWork;
         }
-
         public ProductCategory Add(ProductCategory ProductCategory)
         {
             return _ProductCategoryRepository.Add(ProductCategory);
