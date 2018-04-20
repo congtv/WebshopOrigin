@@ -64,12 +64,13 @@
     <Compile Include="Migrations\201804171905000_Init.Designer.cs">
       <DependentUpon>201804171905000_Init.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201804190907574_demoDuLieu.cs" />
-    <Compile Include="Migrations\201804190907574_demoDuLieu.Designer.cs">
-      <DependentUpon>201804190907574_demoDuLieu.cs</DependentUpon>
+    <Compile Include="Migrations\201804191445351_addErrorTable.cs" />
+    <Compile Include="Migrations\201804191445351_addErrorTable.Designer.cs">
+      <DependentUpon>201804191445351_addErrorTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ErrorRepository.cs" />
     <Compile Include="Repositories\FeedbackRepository.cs" />
     <Compile Include="Repositories\MenuGroupRepository.cs" />
     <Compile Include="Repositories\MenuRepository.cs" />
@@ -83,7 +84,7 @@
     <Compile Include="Repositories\ProductTagRepository.cs" />
     <Compile Include="Repositories\SlideRepository.cs" />
     <Compile Include="Repositories\TagRepository.cs" />
-    <Compile Include="WebShopDbContext.cs" />
+    <Compile Include="WebshopDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -99,8 +100,8 @@
     <EmbeddedResource Include="Migrations\201804171905000_Init.resx">
       <DependentUpon>201804171905000_Init.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804190907574_demoDuLieu.resx">
-      <DependentUpon>201804190907574_demoDuLieu.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201804191445351_addErrorTable.resx">
+      <DependentUpon>201804191445351_addErrorTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
