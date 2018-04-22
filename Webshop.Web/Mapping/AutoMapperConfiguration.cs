@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Webshop.Model.Models;
+using Webshop.Web.Models;
 
 namespace Webshop.Web.Mapping
 {
@@ -16,7 +18,7 @@ namespace Webshop.Web.Mapping
 
                     //config.CreateMap<ProductTag, ProductTagViewModel>();
                     //config.CreateMap<Product, ProductViewModel>();
-                    //config.CreateMap<ProductCategory, ProductCategoryViewModel>();
+                    config.CreateMap<ProductCategory, ProductCategoryViewModel>();
                 });
             //B2: muốn mapping đối tượng ta làm như sau :
             //var post_category = new PostCategory { ID = 999, Name = "Test" };
